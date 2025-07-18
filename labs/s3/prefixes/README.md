@@ -1,0 +1,19 @@
+## Create our bucket
+```sh
+aws s3 mb s3://prefixes-fun-ml-5645
+```
+## Create our folder
+```sh
+aws s3api put-object --bucket="prefixes-fun-ml-5645" --key="hello/" 
+```
+## Create lots of folder
+Lorem/ipsum/dolor/sit/amet/consectetur/adipiscing/elit/Vivamus/tortor/enim/maximus/sodales/facilisis/ac/varius/eget/justo/Duis/pharetra/fringilla/felis/nec/facilisis/Suspendisse/id/iaculis/sapien/Vivamus/in/augue/nisi/Nunc/id/urna/ut/justo/porta/pretium/Praesent/non/arcu/lacinia/leo/tincidunt/suscipit/Duis/elementum/facilisis/congue/Suspendisse/sit/amet/enim/sed/ante/maximus/pulvinar/Morbi/ac/congue/mauris/Vivamus/risus/quam/euismod/quis/est/in/ullamcorper/venenatis/velit/Donec/varius/lorem/in/volutpat/pellentesque/In/in/tellus/libero/Duis/vel/turpis/vitae/ante/hendrerit/ornare/Nunc/eu/augue/eu/quam/dapibus/tempus/at/vitae/velit/Morbi/eu/lectus/tristique/malesuada/nunc/sed/dictum/ipsum/Sed/ut/risus/ac/nisi/tincidunt/tempus/finibus/eget/turpis/Mauris/sit/amet/tristique/orci/a/maximus/justo/Nulla/et/urna/quis/quam/venenatis/facilisis/Nulla/risus/arcu/pharetra/ut/placerat/sit/amet/accumsan/vel/lorem/Phasellus/at/purus/eu/neque/cursus/aliquam/Vestibulum/ante/ipsum/primis/in/porttitor
+
+```sh
+aws s3api put-object --bucket="prefixes-fun-ml-5645" --key="Lorem/ipsum/dolor/sit/amet/consectetur/adipiscing/elit/Vivamus/tortor/enim/maximus/sodales/facilisis/ac/varius/eget/justo/Duis/pharetra/fringilla/felis/nec/facilisis/Suspendisse/id/iaculis/sapien/Vivamus/in/augue/nisi/Nunc/id/urna/ut/justo/porta/pretium/Praesent/non/arcu/lacinia/leo/tincidunt/suscipit/Duis/elementum/facilisis/congue/Suspendisse/sit/amet/enim/sed/ante/maximus/pulvinar/Morbi/ac/congue/mauris/Vivamus/risus/quam/euismod/quis/est/in/ullamcorper/venenatis/velit/Donec/varius/lorem/in/volutpat/pellentesque/In/in/tellus/libero/Duis/vel/turpis/vitae/ante/hendrerit/ornare/Nunc/eu/augue/eu/quam/dapibus/tempus/at/vitae/velit/Morbi/eu/lectus/tristique/malesuada/nunc/sed/dictum/ipsum/Sed/ut/risus/ac/nisi/tincidunt/tempus/finibus/eget/turpis/Mauris/sit/amet/tristique/orci/a/maximus/justo/Nulla/et/urna/quis/quam/venenatis/facilisis/Nulla/risus/arcu/pharetra/ut/placerat/sit/amet/accumsan/vel/lorem/Phasellus/at/purus/eu/neque/cursus/aliquam/Vestibulum/ante/ipsum/primis/in/porttitor"
+```
+## Try and break 1024 limit
+```sh
+aws s3api put-object --bucket="prefixes-fun-ml-5645" --key="Lorem/ipsum/dolor/sit/amet/consectetur/adipiscing/elit/Vivamus/tortor/enim/maximus/sodales/facilisis/ac/varius/eget/justo/Duis/pharetra/fringilla/felis/nec/facilisis/Suspendisse/id/iaculis/sapien/Vivamus/in/augue/nisi/Nunc/id/urna/ut/justo/porta/pretium/Praesent/non/arcu/lacinia/leo/tincidunt/suscipit/Duis/elementum/facilisis/congue/Suspendisse/sit/amet/enim/sed/ante/maximus/pulvinar/Morbi/ac/congue/mauris/Vivamus/risus/quam/euismod/quis/est/in/ullamcorper/venenatis/velit/Donec/varius/lorem/in/volutpat/pellentesque/In/in/tellus/libero/Duis/vel/turpis/vitae/ante/hendrerit/ornare/Nunc/eu/augue/eu/quam/dapibus/tempus/at/vitae/velit/Morbi/eu/lectus/tristique/malesuada/nunc/sed/dictum/ipsum/Sed/ut/risus/ac/nisi/tincidunt/tempus/finibus/eget/turpis/Mauris/sit/amet/tristique/orci/a/maximus/justo/Nulla/et/urna/quis/quam/venenatis/facilisis/Nulla/risus/arcu/pharetra/ut/placerat/sit/amet/accumsan/vel/lorem/Phasellus/at/purus/eu/neque/cursus/aliquam/Vestibulum/ante/ipsum/primis/in/porttitor/quam/venenatis/facilisis/Nulla/risus/arcu/pharetra/ut/placerat/sit/amet/accumsan/vel/lorem/Phasellus/at/purus/eu/neque/cursus/aliquam/Vestibulum/ante/ipsum/primis/in/porttitor/hello.txt" --body "hello.txt"
+# An error occurred (KeyTooLongError) when calling the PutObject operation: Your key is too long
+```

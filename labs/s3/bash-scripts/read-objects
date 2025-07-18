@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+echo "== read object to cli | ctrl + c to escape"
+
+# Check for bucket name
+if [ -z "$1" ]; then
+    echo "There needs to be a bucket name eg. ./bucket my-bucket-name"
+    exit 1
+fi
+
+# Check for objectname 
+if [ -z "$2" ]; then
+    echo "There needs to be a object KEY eg. ./bucket my-bucket-name my-filename"
+    exit 1
+fi
+
+BUCKET_NAME=$1
+OBJECT_KEY=$2
+
+
+aws s3 cp s3://$BUCKET_NAME/$OBJECT_KEY - && cat

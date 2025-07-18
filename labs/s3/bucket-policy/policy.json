@@ -1,0 +1,19 @@
+{
+    "Statement": [
+       {
+          "Effect": "Allow",
+          "Principal": {
+            "AWS": "arn:aws:iam::058264189700:user/mlehr"
+          },
+          "Action": [
+            "s3:ListBucket",
+            "s3:GetObject",
+            "s3:PutObject"
+          ],
+          "Resource": [
+            "arn:aws:s3:::bucket-policy-example-msl616",
+            "arn:aws:s3:::bucket-policy-example-msl616/*"
+          ]
+       }
+    ]
+ }

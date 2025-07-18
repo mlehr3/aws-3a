@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "== deploy s3 bucket via CFN"
+
+STACK_NAME="cfn-s3-simple"
+
+aws cloudformation deploy \
+--template-file template.yaml \
+--region us-west-1 \
+--stack-name $STACK_NAME \
+--no-execute-changeset
+#^ check changeset in console > region > cfn 
+# Andrew Brown says this is good practice

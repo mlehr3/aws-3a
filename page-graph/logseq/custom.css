@@ -1,0 +1,7 @@
+:root {
+  font-size: 20px;
+  --ct-line-height: 1.5;
+  /*--ls-font-family: "JetBrains Mono";*/
+  --ct-page-title-font-family: var(--ls-font-family);
+  --ct-code-font-family: "JetBrains Mono";
+}
