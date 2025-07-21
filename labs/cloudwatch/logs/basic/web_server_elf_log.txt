@@ -1,0 +1,10 @@
+2025-07-20 06:12:00 198.51.100.216 - 10.0.0.1 80 GET /login - 200 1048 curl/7.64.1 https://example.com/
+2025-07-20 06:12:30 198.51.100.197 - 10.0.0.1 80 PUT /images/logo.png - 302 4957 Mozilla/5.0 (Linux; Android 10) https://google.com/search?q=example
+2025-07-20 06:13:00 198.51.100.30 admin 10.0.0.1 80 GET /about - 404 3649 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) https://example.com/login
+2025-07-20 06:13:30 198.51.100.214 - 10.0.0.1 80 POST / - 403 4142 Mozilla/5.0 (Linux; Android 10) -
+2025-07-20 06:14:00 198.51.100.211 john_doe 10.0.0.1 80 PUT /about - 200 4316 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) https://example.com/
+2025-07-20 06:14:30 198.51.100.16 admin 10.0.0.1 80 DELETE /images/logo.png - 302 2083 Mozilla/5.0 (Linux; Android 10) https://example.com/login
+2025-07-20 06:15:00 198.51.100.184 admin 10.0.0.1 80 POST /about - 200 4568 curl/7.64.1 https://google.com/search?q=example
+2025-07-20 06:15:30 198.51.100.224 john_doe 10.0.0.1 80 GET /images/logo.png - 500 1838 Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) https://example.com/
+2025-07-20 06:16:00 198.51.100.242 - 10.0.0.1 80 PUT /login - 200 982 Mozilla/5.0 (Linux; Android 10) https://example.com/
+2025-07-20 06:16:30 198.51.100.95 - 10.0.0.1 80 POST /logout - 200 1912 Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) https://example.com/
