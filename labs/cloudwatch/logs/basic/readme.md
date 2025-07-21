@@ -16,14 +16,15 @@ aws logs create-log-stream \
 --log-stream-name $(date +%s)
 ```
 
-## 
-
 ## Send Logs to our Log Stream
 Standardized Log Formats: Common Log Format, Extended Log Format
+https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CloudWatchLogs/Client.html#put_log_events-instance_method
 ```shell
-aws logs put-log-events \
---log-group-name "/example/basic/app" \
---log-stream-name 1753101542 \
---log-events file://
+bundle exec ruby cloudwatch_logs.rb
 ```
 
+## Clean Up 
+```shell
+aws logs delete-log-group \
+--log-group-name "/example/basic/app"
+```
