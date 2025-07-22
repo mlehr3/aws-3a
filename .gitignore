@@ -24,3 +24,5 @@ crash.*.log
 # LSQ
 page-graph/logseq/bak/
 
+# Python
+.venv/

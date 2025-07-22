@@ -1,3 +1,4 @@
+## AWS CLI `logs`
 ## Create Log Group
 ```sh
 aws logs create-log-group --log-group-name "/example/basic/app"  # never expires
@@ -20,7 +21,7 @@ aws logs create-log-stream \
 Standardized Log Formats: Common Log Format, Extended Log Format
 https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CloudWatchLogs/Client.html#put_log_events-instance_method
 ```shell
-bundle exec ruby cloudwatch_logs.rb
+bundle exec ruby put_logs.rb
 ```
 
 ## Clean Up 

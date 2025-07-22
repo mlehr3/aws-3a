@@ -48,8 +48,8 @@ end
 
 # Usage
 log_group_name = '/example/basic/app'
-log_stream_name = '1753009140'
-log_file_path = 'web_server_elf_log.txt'
+log_stream_name = '1753009141'
+log_file_path = 'web_server_elf_log_fresh.txt'
 
 logs = CloudWatchLogs.new(log_group_name, log_stream_name, log_file_path)
 logs.create_log_group
