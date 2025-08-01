@@ -1,0 +1,59 @@
+tags:: AWS
+
+- [[AWS Certified Solutions Architect - Associate]]
+- [[AWS Certified Developer - Associate]]
+- [[CCP]]
+-
+-
+- **AWS Roadmap**
+	- ![image.png](../assets/image_1703017547603_0.png)
+	- Do all 3 associates at the same time Sysops Administrator, Solutions Architect, Developer
+		- Combined for other cloud provider certs
+	- Can go DevSecOps or MLOps route
+		- spec out both and see what you like
+- ## Associate Level:
+	- ### AWS Certified Solutions Architect
+	  collapsed:: true
+		- **Exam**:
+			- Cost: $150
+			- Exam Code: SAA-C03
+			- Passing Score: 720/1000
+			- No. of Questions: 65 (You can get 18 wrong)
+			- Duration: 130 mins (2min / question)
+			- Subject Breakdown: (Matches up with [[Well Architected Framework]] )
+				- Domain 1: [[Design Secure Architectures]] - 30%
+				- Domain 2: [[Design Resilient Architectures]] - 26%
+				- Domain 3: [[Design High-Performing Architectures]] - 24%
+				- Domain 4: [[Design Cost-Optimized Architectures]] - 20%
+			- Exam Guide: ![AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf](../assets/AWS-Certified-Solutions-Architect-Associate_Exam-Guide_1709141842857_0.pdf)
+		- **About the Certificate**
+			- Provides the most flexible future learning path
+	- ### AWS Certified Developer
+		- **Exam**:
+			- Cost: $150
+			- Exam Code: DVA-C02
+			- Passing Score: 720/1000
+			- No. of Questions: 65 (You can get 18 wrong)
+			- Duration: 130 mins (2min / question)
+				- Not worrying about pacing
+			- Subject Breakdown:
+				- Domain 1: Deployment - 22%
+				- Domain 2: Security - 26%
+				- Domain 3: Development with AWS Services - 30%
+				- Domain 4: Refactoring - 10%
+				- Domain 4: Monitoring and Troubleshooting - 12%
+			- Exam Guide:
+			- Study Time (me): 1.5 - 2 months of study
+		- **About the Certificate**
+			- For:
+				- Web Developers looking to add Cloud Computing skills to their toolkit
+				- Think about how to build **Cloud-first** web applications
+					- Push complexity into managed cloud services
+			- **Hardest** Associate AWS Certification
+				- Practical knowledge that will help you do the job of a cloud engineer
+				- Will help you stand out on resumes
+				- Not likely to increase your salary
+		- **Reading**
+			- Graphic priority (red> black > gray)
+			- ![Screenshot 2024-05-22 125701.png](../assets/Screenshot_2024-05-22_125701_1716397047300_0.png)
+			  id:: 664e23d0-c6ea-4931-9014-1ef83a62f929

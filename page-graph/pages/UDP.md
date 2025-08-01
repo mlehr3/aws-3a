@@ -1,0 +1,3 @@
+- Packets are sent and require no acknowledgment
+- Packets can be lost, but this protocol is much faster than [[TCP]]
+- Used commonly in video games for low latency.

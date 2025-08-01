@@ -1,0 +1,22 @@
+tags:: AWS-DevOps
+date-created:: [[2025-Q1]]
+	- Fully Managed Cloud Build Service that eliminates the need to provision, manage. and scale your own build servers.
+	- ---
+	- #### Capabilities
+		- Compile Source Code
+		- Run Unit Tests
+		- Produce deployment ready artifacts
+	- #### Workflow
+		- Build Environment: Managed or Custom Image
+		- Source Code from VCS
+		- Buildspec.yml
+			- can be overwritten with commands in cli
+			- versions
+				- 0.1 runs each build command in a separate instance
+				- 0.2 runs all build commands in the same instance
+			- phases: the commands run during each phase of the build
+				- `install` - only for installing packages in the build env
+				- `pre_build` - commands that run before building
+				- `build` - commands that you run during the build
+				- `post_build` - commands run after the build
+			- artifacts: where we can find the build output and how to prepare it for uploading to the S3 output bucket

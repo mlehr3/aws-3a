@@ -1,0 +1,10 @@
+- #flashcard #AWS-SAA #inbox
+	- Amazon S3 Access Grants
+		- Lets you map Identities in a directory service
+		- IAM Identity Center, Active Directory, Okta, Azure)
+	- What will Access Analyzer for S3 alert you about?
+		- S3 buckets exposed to the internet
+		- S3 buckets exposed to other AWS Accounts
+	- What does and doesn't AWS S3 server side encryption encrypt?
+		- Does - objects
+		- Doesn't - metadata

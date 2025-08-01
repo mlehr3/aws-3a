@@ -1,0 +1,4 @@
+- Packets require acknowledgement of receival
+- Its guarantee retrieval of packets.
+- Used commonly in web-applications.
+-
